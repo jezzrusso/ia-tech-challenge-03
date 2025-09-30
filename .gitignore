@@ -1,0 +1,73 @@
+# ---------------------------
+# Python básico
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtualenvs
+.venv/
+env/
+venv/
+
+# Cache de pacotes
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# ---------------------------
+# IDEs / editores
+# ---------------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Outros
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Checkpoints de treino
+# ---------------------------
+# Hugging Face / Transformers
+runs/
+output/
+checkpoints/
+*.ckpt
+*.bin
+*.safetensors
+
+# Modelos salvos localmente
+models/*
+
+# Mas manter a pasta de modelos vazia
+!models/.gitkeep
+
+# ---------------------------
+# Dados
+# ---------------------------
+data/*
+
+# Manter estrutura de pastas
+!data/.gitkeep
+!data/raw/
+!data/processed/
+!data/interim/
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/interim/.gitkeep
+
+# ---------------------------
+# Arquivos temporários
+# ---------------------------
+*.log
+*.tmp
+*.bak
