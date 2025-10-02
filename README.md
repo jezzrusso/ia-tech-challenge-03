@@ -20,8 +20,14 @@ tech-challenge-amazon-titles/
 
 Comandos utilizados:
 
-python -m src.data_prep --in_path data/raw/trn.json --out_dir data/processed --subset 5000
+python -m src.data_prep --in_path data/raw/trn.json --out_dir data/processed --subset 50000
+
 python -m src.eval baseline
+
 python -m src.train --epochs 1
+
 python -m src.eval sft
+python -m src.eval sft --max_new_tokens 128 --num_beams 4 --device auto --save_metrics
+
+
 python -m src.infer --title "Apple iPhone 14 Pro Max 128GB" --question "Descreva o produto"
